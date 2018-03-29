@@ -132,6 +132,16 @@ class test_regen:
 
         assert list(iter(g)) == list(range(10))
 
+    def test_iter(self):
+        g = regen(i for i in range(10))
+
+        expected_output = [i for i in range(10)]
+
+        first_output = [i for i in g]
+        assert first_output == expected_output
+        second_output = [i for i in g]
+        assert second_output == expected_output
+
 
 class test_head_from_fun:
 
