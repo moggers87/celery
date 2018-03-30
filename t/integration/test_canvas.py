@@ -15,7 +15,7 @@ from .tasks import (add, add_chord_to_chord, add_replaced, add_to_all,
                     delayed_sum_with_soft_guard, identity, ids, print_unicode,
                     redis_echo, second_order_replace1, tsum)
 
-TIMEOUT = 120
+TIMEOUT = 480
 
 
 class test_chain:
